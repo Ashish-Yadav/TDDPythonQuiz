@@ -28,7 +28,7 @@ class TestFizzBuzzMocked(pymock.PyMockTestCase):
         self.replay()
 
         #call API
-        self.fb.report(numbers, fileOpener=mock_opener.open)
+        self.fb.report(numbers, opener=mock_opener.open)
 
         # verify
         self.verify()
