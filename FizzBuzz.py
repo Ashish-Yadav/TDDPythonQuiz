@@ -12,9 +12,9 @@ where "filehandler" will be used for creating an impression of reading values fr
 
 """
 class FizzBuzz(object):
-    def report(self, numbers):
+    def report(self, numbers,opener):
 
-        report_file = open('c:/temp/fizzbuzz_report.txt', 'w')
+        report_file = opener('c:/temp/fizzbuzz_report.txt', 'w')
 
         for number in numbers:
             msg = str(number) + " "
